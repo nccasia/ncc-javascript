@@ -7,7 +7,7 @@ Table of contents
 
 Biến trong JavaScript được nhập lỏng lẻo, có nghĩa là, các biến có thể giữ giá trị với bất kỳ loại dữ liệu nào.
 
-## 1. `var`, `let` and `const`
+# 1. `var`, `let` and `const`
 
 ## 1.1 var
 
@@ -105,4 +105,48 @@ greeting.message = "say Hello instead";
 console.log(greeting); // {message:"say Hello instead",number:"five"}
 ```
 
-## 2. `reference` vs `primitive` value
+# 2. `reference` vs `primitive` value
+
+## 2.1 Primitive value
+
+Chứa giá trị khi được gán cho biến và được lưu trữ trong `stack`.
+
+Có 6 kiểu phân loại: `undefined`, `null`, `boolean`, `number`, `string` and `symbol`(ES6)
+
+```javascript
+const x = "Hi";
+const y = 7;
+```
+
+Như ví dụ chúng ta có: X chứa "Hi", y chứa 7.
+
+### chỉ sao chép giá trị
+
+```javascript
+const x = "Hi";
+const y = 7;
+
+let a = x,
+  b = y;
+a = "Hello";
+b = 8;
+
+console.log(x, a, y, b); // "Hi", 7, "Hello", 8
+```
+
+## 2.2 Reference value
+
+Các `Objects` sẽ sao chép theo dạng tham chiếu, nghĩa là địa chỉ của 1 giá trị nằm trên RAM. Giá trị mà biến `Reference` tham chiếu tới được lưu trữ ở bộ nhớ `Heap`.
+
+Cả 3 dạng `Array`, `Function` và `Object` đều được xét là những `Objects`
+
+```javascript
+const x = {
+  name: "Javascript",
+};
+
+let y = x;
+y.name = "JS";
+
+console.log(x.name); // "JS"
+```
