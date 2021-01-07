@@ -5,11 +5,11 @@
 - [reference vs primitive value](./variable/README.md#2-reference-primitive)
 
 ## 2. Data Types:
-- [Array](#)
-- [Object](#)
-- [String](#)
-- [Number](#)
-- [Boolean](#)
+- [Array](./dataTypes/README.md#1-array)
+- [Object](./dataTypes/README.md#2-object)
+- [String](./dataTypes/README.md#3-string)
+- [Number](./dataTypes/README.md#4-number)
+- [Boolean](./dataTypes/README.md#5-boolean)
 
 ## 3. Error and exception handling:
 - [Error Object (EvalError, RangeError, ReferenceError, Custom ...vv)](#)
