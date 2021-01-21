@@ -4,9 +4,6 @@ Table of contents
 
 1. [Array](#1-array)
 2. [Object](#2-object)
-3. [String](#3-string)
-4. [Number](#4-number)
-5. [Boolean](#5-boolean)
 
 # 1. Array
 
@@ -60,11 +57,7 @@ arr[3](); // hello
 ### Trailing comma
 
 ```javascript
-let fruits = [
-  "Apple", 
-  "Orange", 
-  "Plum",
-];
+let fruits = ["Apple", "Orange", "Plum"];
 ```
 
 Một mảng, giống như một đối tượng, có thể kết thúc bằng ",". Kiểu **trailing comma** giúp chèn / xóa các mục dễ dàng hơn vì tất cả các dòng trở nên giống nhau.
@@ -379,3 +372,20 @@ alert(result); // 15
 Dùng để kiểm tra `arr` có phải là mảng hay không
 
 # 2. Object
+
+- **keys**: Trả về 1 mảng các khóa
+
+- **values**: Trả về 1 mảng các giá trị
+
+- **entries**: Trả về 1 mảng mà phần tử là mảng chứa khóa và giá trị
+
+```javascript
+let user = {
+  name: "John",
+  age: 30,
+};
+
+Object.keys(user); // ["name", "age"]
+Object.values(user); // ["John", 30]
+Object.entries(user); // [ ["name","John"], ["age",30] ]
+```

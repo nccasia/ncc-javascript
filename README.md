@@ -7,13 +7,13 @@
 ## 2. Data Types:
 - [Array](./dataTypes/README.md#1-array)
 - [Object](./dataTypes/README.md#2-object)
-- [String](./dataTypes/README.md#3-string)
-- [Number](./dataTypes/README.md#4-number)
-- [Boolean](./dataTypes/README.md#5-boolean)
+- [String](https://javascript.info/string)
+- [Number](https://javascript.info/number)
+- [Boolean](#)
 
 ## 3. Error and exception handling:
-- [Error Object (EvalError, RangeError, ReferenceError, Custom ...vv)](#)
-- [Try Catch throw finally](#)
+- [Error handling, "try..catch"](https://javascript.info/try-catch)
+- [Custom errors](https://javascript.info/custom-errors)
 
 ## 4. Function:
 - [async/await](#)
